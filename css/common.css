@@ -1,0 +1,101 @@
+/* Font */
+.tit_wrap h2.tit{
+  font-size: 5rem;
+  line-height: 5.5rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+}
+.tit_wrap h2.tit b{ font-weight: 900;}
+.tit_wrap p.txt1 {
+  font-size: 3.2rem;
+  font-style: italic;
+}
+.tit_wrap p.txt2 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.sub_txt_wrap {
+  text-align: center;
+  font-size: 3rem;
+}
+.sub_txt_wrap .year {font-size: 4rem;}
+.sub_txt_wrap .year b {font-weight: 900;}
+
+.card_tit{
+  font-size: 3rem;
+  font-weight: 900;
+}
+.card_txt{font-size: 1.8rem;}
+.s2_card{
+  width: 33rem;
+  height: 48.4rem;
+}
+.cardImg { width: 24rem;}
+.con_tit {font-size: 3.6rem;}
+.con_txt {font-size: 2rem;}
+.date {font-size: 1.8rem;}
+.more {font-size: 1.8rem;}
+
+/* Button */
+a.con_btn {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  width: 16rem;
+  height: 5.2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 5.2rem;
+}
+
+/* Section */
+section{
+  padding: 10rem 3rem;
+  position: relative;
+  z-index: 0;  /* 헤더보다 낮아야 함 */
+}
+.rel{
+  position: relative;
+  height: 100%; /* 부모가 가지고 있는 높이값을 유연하게 가질수 있도록함 */
+}
+
+/* 4~6 공통 */
+#section4 .rel,
+#section5 .rel,
+#section6 .rel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30rem;
+}
+
+#section4 .rel>div,
+/* #section5 .rel>div,
+#section6 .rel>div{
+  flex: 1;
+
+} */
+
+#section4 a.con_btn,
+#section5 a.con_btn,
+#section6 a.con_btn{
+  margin-top: 3.5rem;
+}
+
+.img_wrap{
+  position: relative;
+  margin-top: 8rem;
+}
+.deco{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain; /* 높이를기준으로 할때 주로 사용(이미지가 짤리지 않도록함) */
+  background-repeat: no-repeat;
+}
