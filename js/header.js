@@ -1,7 +1,6 @@
 $(function(){
 
   //Mobile Navigation__________________
-
   const mobSubBtn = $('.subNav .sub_menu .depth1>li');
 
   mobSubBtn.click(function(){
@@ -11,6 +10,7 @@ $(function(){
     $(this).find(".depth2").slideToggle(200);
     $(this).toggleClass("active");
   });
+
 
   //Desktop Navigation_________________
   /*메인메뉴에 호버를 하면 서브가 나오고 이 상태에서 검색버튼을 누르면 검색창이 나오고,
@@ -69,15 +69,13 @@ $(function(){
   };
 
   //브라우저 크기가 변경되었을때 초기화
-$(window).on('load resize',function(){
-  let w = $(window).innerWidth();
-  if(w < 1200){
-    hNav_reset();
-    sch_reset();
-    subNav.removeAttr('style');
-  };
-});
-
-
+  $(window).on('load resize',function(){
+    let w = $(window).innerWidth();
+    if(w < 1200){
+      hNav_reset();
+      sch_reset();
+      subNav.removeAttr('style'); 
+    };
+  });
 
 });
